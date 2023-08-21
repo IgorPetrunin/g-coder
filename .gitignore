@@ -1,0 +1,5 @@
+*.dcu
+*.exe
+/gcode.dproj.local
+/gcode.identcache
+/Win32
