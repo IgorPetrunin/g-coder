@@ -92,9 +92,9 @@
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <UWP_DelphiLogo44>X:\шестерня44px.png</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>X:\шестерня150px.png</UWP_DelphiLogo150>
-        <Icon_MainIcon>gcode_Icon.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>img\шестерня44px.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>img\шестерня150px.png</UWP_DelphiLogo150>
+        <Icon_MainIcon>img\gcode_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -143,23 +143,23 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\gcode.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>gcode.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="X:\шестерня150px.png" Configuration="Debug" Class="UWP_DelphiLogo150">
+                <DeployFile LocalName="img\шестерня150px.png" Configuration="Debug" Class="UWP_DelphiLogo150">
                     <Platform Name="Win32">
                         <RemoteDir>Assets\</RemoteDir>
                         <RemoteName>Logo150x150.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="X:\шестерня44px.png" Configuration="Debug" Class="UWP_DelphiLogo44">
+                <DeployFile LocalName="img\шестерня44px.png" Configuration="Debug" Class="UWP_DelphiLogo44">
                     <Platform Name="Win32">
                         <RemoteDir>Assets\</RemoteDir>
                         <RemoteName>Logo44x44.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Debug\gcode.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>gcode.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
